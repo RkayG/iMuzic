@@ -1,6 +1,6 @@
 # iMuzic - Spotify Music Recommendation System
 
-Welcome to iMuzic, a web application that leverages the Spotify API to provide music recommendations based on your favorite songs or artists.
+Welcome to iMuzic, a web application that leverages the Spotify API to provide music recommendations based on your favorite songs or artists. 
 
 ## Preview
 ![Homepage](preview/home_page.png)
@@ -9,7 +9,7 @@ Welcome to iMuzic, a web application that leverages the Spotify API to provide m
 ## App Structure
 
 1. **recommendations.py:**
-    - Contains the core functionality for fetching music recommendations using the Spotify API.
+    - Contains the core functionality for fetching music recommendations using the Spotify API. It uaes the 
 
 2. **requirements.txt:**
     - Lists the required Python packages. Install them using `pip install -r requirements.txt`.
