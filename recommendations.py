@@ -1,10 +1,15 @@
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 import streamlit as st
+import configparser
 
-# Spotify API credentials
-CLIENT_ID = "c18a4ee6c6a34de6941e5ccb6f6cdf5d"
-CLIENT_SECRET = "a77a3b4d50d3400987b9403176322ed1"
+# Read configuration from config.ini
+config = configparser.ConfigParser()
+config.read('config.ini')
+
+# Get values from the configuration
+CLIENT_ID = config.get('SPOTIPY', 'CLIENT_ID')
+CLIENT_SECRET = config.get('SPOTIPY', 'CLIENT_SECRET')
 
 # Initialize Spotify client
 client_credentials_manager = SpotifyClientCredentials(client_id=CLIENT_ID, client_secret=CLIENT_SECRET)
