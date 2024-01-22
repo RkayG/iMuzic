@@ -1,6 +1,6 @@
 # iMuzic - Spotify Music Recommendation System
 
-Welcome to iMuzic, a web application that leverages the Spotify API to provide music recommendations based on your favorite songs or artists. 
+Welcome to iMuzic, a Streamlit application that leverages the Spotify API to provide music recommendations based on your favorite songs or artists. 
 
 ## Preview
 ![Homepage](preview_images/home_page.png)
@@ -9,7 +9,7 @@ Welcome to iMuzic, a web application that leverages the Spotify API to provide m
 ## App Structure
 
 1. **recommendations.py:**
-    - Contains the core functionality for fetching music recommendations using the Spotify API. It uaes the 
+    - Contains the core functionality for fetching music recommendations using the Spotify API based on a seed song or artist. It leverages Spotify's content-based and collaborative filtering algorithms for recommendations.
 
 2. **requirements.txt:**
     - Lists the required Python packages. Install them using `pip install -r requirements.txt`.
@@ -22,7 +22,7 @@ Welcome to iMuzic, a web application that leverages the Spotify API to provide m
     - Applies custom styling, sets up the page, and integrates the recommendation functionality.
 
 5. **config.ini:**
-    - Configuration file to store Spotify API credentials. Ensure this file is not shared publicly.
+    - Configuration file to store Spotify API credentials. This was not added to GitHub. 
 
 ## Installation
 
@@ -38,8 +38,7 @@ Welcome to iMuzic, a web application that leverages the Spotify API to provide m
     pip install -r requirements.txt
     ```
 
-3. Create a `config.ini` file in the root directory and add your Spotify API credentials:
-
+3. Create a `config.ini` file in the root directory and add Replace `"your_client_id"` and `"your_client_secret"` with your actual Spotify API credentials:
     ```ini
     [SPOTIPY]
     CLIENT_ID = "your_client_id"
@@ -56,5 +55,4 @@ streamlit run app.py
 
 Visit http://localhost:8501 in your browser to interact with the app.
 
-Replace `"your_client_id"` and `"your_client_secret"` with your actual Spotify API credentials.
 
