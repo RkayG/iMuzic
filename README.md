@@ -3,8 +3,8 @@
 Welcome to iMuzic, a web application that leverages the Spotify API to provide music recommendations based on your favorite songs or artists. 
 
 ## Preview
-![Homepage](preview/home_page.png)
-![Recommendations](preview/recommendations_page.png)
+![Homepage](preview_images/home_page.png)
+![Recommendations](preview_images/recommendations_page.png)
 
 ## App Structure
 
